@@ -29,7 +29,7 @@ client.on("messageCreate", async (message) => {
       message.reply("🔍 Fetching domain info...");
 
       const res = await axios.get(
-        `http://localhost:5000/api/domain/${domain}`
+        `https://urlunmasker-api.onrender.com/api/domain/${domain}`
       );
 
       const data = res.data;
